@@ -18,11 +18,12 @@ int main() {
 	progress::ProgressBar bar_two = progress::ProgressBar(100, 10000, true);
 
 	std::cout << "Progress bar with safe characters:" << std::endl;
-	for (int i = 0; i < 5000; i++) {
+	for (int i = 0; i < 4999; i++) {
 		std::this_thread::sleep_for(std::chrono::milliseconds(1));
 		//Increase by 2
 		bar_two.tick(2);	
 	}
+	bar_two.kill();
 	
 	return 0;
 }
