@@ -5,7 +5,7 @@ A simple and lightweight progress bar library written in c++
 Simply navigate to the project directory and run `make`
 This will the create the file `progress.a`  which you can then use when compiling your project.
 e.x:
-`gcc -o test test.cpp progress.a`
+`g++ -o test test.cpp progress.a`
 ### Windows
 If you use MSYS/Cygwin, you can just run the `make.bat` file to build a static library which can then be used in your project.
 If you use Visual Studio, good luck. I have no knowledge whatsoever of how to use Visual Studio.
